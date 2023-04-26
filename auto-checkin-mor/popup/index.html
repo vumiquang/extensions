@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="control">
+        <p class="control-title">Year</p>
+        <select name="year" id="year"></select>
+      </div>
+      <div class="control">
+        <p class="control-title">Month</p>
+        <select name="month" id="month"></select>
+      </div>
+      <div class="control">
+        <p class="control-title">Project</p>
+        <select name="project" id="project"></select>
+      </div>
+      <div class="control">
+        <p class="control-title">Time</p>
+        <input type="number" name="time" id="time" value="8" />
+      </div>
+      <div>
+        <button id="run-script">Run tool</button>
+      </div>
+    </div>
+    <div class="table-date">
+      <table>
+        <thead>
+          <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Auto checkin MOR-SOFTWARE",
+  "version": "1.0",
+  "description": "Help you easy to do check in MOR",
+  "action": {
+    "default_icon": "images/icon_128.png",
+    "default_popup": "popup/disable.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "activeTab", "cookies","storage"],
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
