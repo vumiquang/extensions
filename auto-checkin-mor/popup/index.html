@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <div class="loading d-none">
+      <img src="../images/loading.gif" />
+    </div>
     <div class="wrapper">
       <div class="control">
         <p class="control-title">Year</p>
@@ -18,18 +21,10 @@
         <select name="month" id="month"></select>
       </div>
       <div class="control">
-        <p class="control-title">Project</p>
-        <select name="project" id="project"></select>
-      </div>
-      <div class="control">
-        <p class="control-title">Time</p>
-        <input type="number" name="time" id="time" value="8" />
-      </div>
-      <div>
-        <button id="run-script">Run tool</button>
+        <button id="run-script">Get list check in</button>
       </div>
     </div>
-    <div class="table-date">
+    <div class="table-date" style="display: none">
       <table>
         <thead>
           <tr>
@@ -48,6 +43,33 @@
           </tr>
         </tbody>
       </table>
+      <div class="control">
+        <p class="control-title">Project</p>
+        <select name="project" id="project"></select>
+      </div>
+      <div class="control">
+        <p class="control-title">Time</p>
+        <input type="number" name="time" id="time" value="8" />
+      </div>
+      <div class="auto-checkin">
+        <button id="checkin">Auto check in</button>
+      </div>
+    </div>
+    <div class="popup-checkin d-none">
+      <span class="close-popup-checkin">X</span>
+      <div class="popup-title">You will check in:</div>
+      <div class="show-data show-data-project">
+        Project: <span class="show-project"></span>
+      </div>
+      <div class="show-data show-data-time">
+        Time: <span class="show-time"></span>
+      </div>
+      <div class="list-time">List time check in:</div>
+      <ul class="list-date-check"></ul>
+      <div class="wrap-button">
+        <button class="ok-checkin">OK</button>
+        <button class="cancel">Cancel</button>
+      </div>
     </div>
     <script src="script/app.js"></script>
   </body>

@@ -22,9 +22,135 @@
 }
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 th,
 td {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  height: 10px;
+  height: 15px;
+  text-align: center;
+  padding: 3px 0;
+}
+th {
+  font-weight: 400;
+}
+td {
+  color: white;
+}
+.no-cursor {
+  pointer-events: none;
+}
+.bg-red {
+  background-color: rgb(60, 60, 60);
+}
+.checkin {
+  background-color: #00c742;
+}
+.empty {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+.checked {
+  background: yellow;
+  position: relative;
+}
+.control {
+  margin-top: 10px;
+}
+.control-title {
+  margin-bottom: 5px;
+}
+select,
+input {
+  padding: 5px 10px;
+}
+button {
+  cursor: pointer;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+}
+button.cancel {
+  background-color: tomato;
+}
+.table-date {
+  margin-top: 10px;
+}
+.auto-checkin {
+  margin-top: 10px;
+}
+.d-none {
+  display: none !important;
+}
+.popup-checkin {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  overflow-y: scroll;
+  border-radius: 3px;
+  padding: 10px 10px;
+}
+.close-popup-checkin {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: tomato;
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.popup-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+ul,
+li {
+  list-style-type: none;
+}
+li {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.show-data {
+  font-size: 14px;
+}
+.show-data span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0035e3;
+}
+.list-time {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.wrap-button {
+  margin-top: 10px;
+}
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: yellow;
+}
+.loading img {
+  width: 80px;
+  height: auto;
 }
